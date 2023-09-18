@@ -1,0 +1,17 @@
+// importing the functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+    "altbody": #FFFFFE,
+    "first": #232946,
+    "second": #B8C1EC,
+    "third": #EEBBC3,
+    "fourth": #C1E3FD,
+);
+
+// merging two maps
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// importing bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
